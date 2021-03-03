@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Gato</title>
+    <style>
+        .box{
+            margin: 1px;
+            padding: 40px;
+        }
+        div{
+            margin-top: inherit;
+            margin-left: 500px;
+            padding: 5px;
+            
+        }
+        button{
+            border-radius: 10px;
+            border: 1px solid #000000; 
+        }
+        .boton_gato{
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            margin: 10px;
+        }
+        .boton_limpiar{
+            width: 100px;
+            height: 25px;
+            margin: 10px;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <section id="tablero" class="box">
+        <!--<form action="" method="POST" id="formulario" onsubmit="return false">-->
+            <div>
+                <button id="a1" class="boton_gato"></button>
+                <button id="a2" class="boton_gato"></button>
+                <button id="a3" class="boton_gato"></button>
+            </div>
+            <div>
+                <button id="b1" class="boton_gato"></button>
+                <button id="b2" class="boton_gato"></button>
+                <button id="b3" class="boton_gato"></button>
+            </div>
+            <div>   
+                <button id="c1" class="boton_gato"></button>
+                <button id="c2" class="boton_gato"></button>
+                <button id="c3" class="boton_gato"></button>
+            </div>
+            <div>
+                <button id="limpiar" class="boton_limpiar">Limpiar</button>
+            </div>
+        <!--</form>-->
+    </section>
+
+    <script type="text/javascript" src="JS/gato.js"></script>
+
+</body>
+</html>
