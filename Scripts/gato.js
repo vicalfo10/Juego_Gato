@@ -16,7 +16,7 @@ function load(){
     
     for(var i = 0; i <= botones.length; i++){
         if(botones[i] == a1){
-            console.log("hola")
+            console.log("hola a todos")
         }
 
     }

@@ -5,39 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego Gato</title>
-    <style>
-        .box{
-            margin: 1px;
-            padding: 40px;
-        }
-        div{
-            margin-top: inherit;
-            margin-left: 500px;
-            padding: 5px;
-            
-        }
-        button{
-            border-radius: 10px;
-            border: 1px solid #000000; 
-        }
-        .boton_gato{
-            width: 40px;
-            height: 40px;
-            font-size: 18px;
-            margin: 10px;
-        }
-        .boton_limpiar{
-            width: 100px;
-            height: 25px;
-            margin: 10px;
-            margin-left: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <section id="tablero" class="box">
-        <h1>HOLA JUNAKA 1</h1>
-        <!--<form action="" method="POST" id="formulario" onsubmit="return false">-->
+        <h1>HOLA JUNAKA</h1>
             <div>
                 <button id="a1" class="boton_gato"></button>
                 <button id="a2" class="boton_gato"></button>
@@ -56,9 +29,13 @@
             <div>
                 <button id="limpiar" class="boton_limpiar">Limpiar</button>
             </div>
-        <!--</form>-->
     </section>
 
+    <script src="src/jquery-3.3.1.slim.min.js"></script>
+    <script src="src/popper.min.js"></script>
+    <script src="src/bootstrap.min.js"></script>
+
     <script type="text/javascript" src="Scripts/gato.js"></script>
+
 </body>
 </html>
