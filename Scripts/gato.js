@@ -1,6 +1,7 @@
 'use strict'
 
 mandarId(this)
+limpiarId()
 
 function mandarId(element){
     obtenerId(element)
@@ -19,5 +20,10 @@ function obtenerId(id){
         asignar.innerHTML = simbolo[0]
         turno = 0
     }
-    console.log(turno)
+}
+
+function limpiarId(){
+        for(var i = 0; i < limpiar.length; i++){
+            limpiar[i].innerHTML = ""
+        }
 }
