@@ -1,16 +1,14 @@
-.box{
-    margin: 1px;
-    padding: 40px;
-}
-div{
-    margin-top: inherit;
-    margin-left: 500px;
+.row > div{
+    margin-bottom: 0px;
+    margin-left: 376px;
+    margin-right: 465px;
     padding: 5px;
+    text-align: center;
     
 }
 button{
     border-radius: 10px;
-    border: 1px solid #000000; 
+    border: 0px solid #000000; 
 }
 .boton_gato{
     width: 40px;
@@ -22,5 +20,5 @@ button{
     width: 100px;
     height: 25px;
     margin: 10px;
-    margin-left: 40px;
+    margin-left: 2px;
 }

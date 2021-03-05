@@ -1,41 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego Gato</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <section id="tablero" class="box">
-        <h1>HOLA JUNAKA</h1>
-            <div>
+<body> 
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Juego #Gato#</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
                 <button id="a1" onclick="mandarId(this.id)" class="boton_gato"></button>
                 <button id="a2" onclick="mandarId(this.id)" class="boton_gato"></button>
                 <button id="a3" onclick="mandarId(this.id)" class="boton_gato"></button>
             </div>
-            <div>
+            <div class="col">
                 <button id="b1" onclick="mandarId(this.id)" class="boton_gato"></button>
                 <button id="b2" onclick="mandarId(this.id)" class="boton_gato"></button>
                 <button id="b3" onclick="mandarId(this.id)" class="boton_gato"></button>
             </div>
-            <div>   
-                <button id="c1" onclick="mandarId(this.id)" class="boton_gato"></button>
-                <button id="c2" onclick="mandarId(this.id)" class="boton_gato"></button>
+            <div class="col">   
+                <button id="c1" onclick="mandarId(this.id)" class="boton_gato"></button> 
+                <button id="c2" onclick="mandarId(this.id)" class="boton_gato"></button> 
                 <button id="c3" onclick="mandarId(this.id)" class="boton_gato"></button>
             </div>
-            <div>
-                <button id="limpiar" onclick="limpiarId()" class="boton_limpiar">Limpiar</button>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="boton_limpiar" id="limpiar">Limpiar</button>
             </div>
-    </section>
+        </div>  
+    </div>
 
     <script src="src/jquery-3.3.1.slim.min.js"></script>
     <script src="src/popper.min.js"></script>
     <script src="src/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="Scripts/gato.js"></script>
-
 </body>
 </html>

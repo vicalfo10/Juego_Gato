@@ -1,9 +1,23 @@
 'use strict'
 
+var limpiar = document.getElementById("limpiar")
+limpiar.addEventListener("click", () => {
+    
+    document.getElementById("a1").innerHTML = ""
+    document.getElementById("a2").innerHTML = ""
+    document.getElementById("a3").innerHTML = ""
+    document.getElementById("b1").innerHTML = ""
+    document.getElementById("b2").innerHTML = ""
+    document.getElementById("b3").innerHTML = ""
+    document.getElementById("c1").innerHTML = ""
+    document.getElementById("c2").innerHTML = ""
+    document.getElementById("c3").innerHTML = ""
+})
+
 mandarId(this)
-limpiarId()
 
 function mandarId(element){
+    console.log(element)
     obtenerId(element)
 }
 
@@ -20,10 +34,4 @@ function obtenerId(id){
         asignar.innerHTML = simbolo[0]
         turno = 0
     }
-}
-
-function limpiarId(){
-        for(var i = 0; i < limpiar.length; i++){
-            limpiar[i].innerHTML = ""
-        }
 }
