@@ -9,31 +9,37 @@
 </head>
 <body> 
     <div class="container">
-        <div class="row">
-            <div class="col">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
                 <h1>Juego #Gato#</h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
+        <div class="row1">
+            <div class="col-md-auto">
                 <button id="a1" onclick="mandarId(this.id)" class="boton_gato"></button>
                 <button id="a2" onclick="mandarId(this.id)" class="boton_gato"></button>
                 <button id="a3" onclick="mandarId(this.id)" class="boton_gato"></button>
             </div>
-            <div class="col">
+            <div class="col-md-auto">
                 <button id="b1" onclick="mandarId(this.id)" class="boton_gato"></button>
                 <button id="b2" onclick="mandarId(this.id)" class="boton_gato"></button>
                 <button id="b3" onclick="mandarId(this.id)" class="boton_gato"></button>
             </div>
-            <div class="col">   
+            <div class="col-md-auto">   
                 <button id="c1" onclick="mandarId(this.id)" class="boton_gato"></button> 
                 <button id="c2" onclick="mandarId(this.id)" class="boton_gato"></button> 
                 <button id="c3" onclick="mandarId(this.id)" class="boton_gato"></button>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <button type="button" class="boton_limpiar" id="contadorX"></button>
+            </div>
+            <div class="col-md-auto">
                 <button type="button" class="boton_limpiar" id="limpiar">Limpiar</button>
+            </div>
+            <div class="col-md-auto">
+                <button type="button" class="boton_limpiar" id="contadorO"></button>
             </div>
         </div>  
     </div>
@@ -41,6 +47,7 @@
     <script src="src/jquery-3.3.1.slim.min.js"></script>
     <script src="src/popper.min.js"></script>
     <script src="src/bootstrap.min.js"></script>
+    <script src="src/sweetalert.min.js"></script>
 
     <script type="text/javascript" src="Scripts/gato.js"></script>
 </body>
