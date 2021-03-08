@@ -1,7 +1,7 @@
 'use strict'
 var simboloGanador = ""
-var Ganados = [0, 0]
-var turno = 0
+var Ganados = [0, 0, 0]
+var turno = 1
 var resultado = false
 var a1 = document.getElementById("a1")
 var a2 = document.getElementById("a2")
@@ -14,6 +14,7 @@ var c2 = document.getElementById("c2")
 var c3 = document.getElementById("c3")
 var botonX = document.getElementById("contadorX")
 var botonO = document.getElementById("contadorO")
+var botonE = document.getElementById("empate")
 
 var limpiar = document.getElementById("limpiar")
 limpiar.addEventListener("click", () => {
@@ -32,6 +33,7 @@ function limpiarBtn(){
     c3.innerHTML = ""
     simboloGanador = ""
     resultado = false
+    turno = 1
 }
 
 mandarId(this)
@@ -80,26 +82,32 @@ function validaGanador(valor){
     }else if(a3.innerHTML == valor && b3.innerHTML == valor && c3.innerHTML == valor){
         resultado = true
         simboloGanador = valor
-    }else{
+    }else if(a1.innerHTML != "" && a2.innerHTML != "" && a3.innerHTML != "" && b1.innerHTML != "" && b2.innerHTML != "" && b3.innerHTML != "" && c1.innerHTML != "" && c2.innerHTML != "" && c3.innerHTML != ""){
         resultado = false
+        simboloGanador = "E"
     }
 
     if(simboloGanador == "X"){
         Ganados[0] += 1
         botonX.innerHTML = "X: " + Ganados[0]
     }else if(simboloGanador == "O"){
+        Ganados[2] += 1
+        botonO.innerHTML = "O: " + Ganados[2]
+    }else if(simboloGanador == "E"){
         Ganados[1] += 1
-        botonO.innerHTML = "O: " + Ganados[1]
+        botonE.innerHTML = "E: " + Ganados[1]
     }
-    muestraGanador(resultado)
+    muestraGanador(resultado, simboloGanador)
 }
 
-function muestraGanador(resultado){
+function muestraGanador(resultado, simboloGanador){
     if(resultado){
-        swal("Buen Trabajo!", "Felicidades, Ganador", "success");
+        if(simboloGanador == "X" || simboloGanador == "O"){
+            swal("Buen Trabajo!", "Felicidades, Ganador: " + simboloGanador, "success");
+            limpiarBtn()
+        }
+    }else if(simboloGanador == "E"){
+        swal("No hay gandor!", "Empate en el resultado", "info");
         limpiarBtn()
-    }else{
-        //swal("Buen Trabajo!", "Felicidades, Ganador", "info");
-        //limpiarBtn()
     }
 }

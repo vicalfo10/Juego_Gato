@@ -10,11 +10,22 @@
 <body> 
     <div class="container">
         <div class="row justify-content-md-center">
-            <div class="col-md-auto">
-                <h1>Juego #Gato#</h1>
+            <div class="col col-md-auto">
+                <button type="button" class="btn btn-outline-success resultado" id="contadorX">X: 0</button>
+            </div>
+            <div class="col col-md-auto">
+                <button type="button" class="btn btn-outline-secondary resultado" id="empate">E: 0</button>
+            </div>
+            <div class="col col-md-auto">
+                <button type="button" class="btn btn-outline-success resultado" id="contadorO">O: 0</button>
             </div>
         </div>
-        <div class="row1">
+        <div class="row justify-content-md-center">
+            <div class="col col-md-auto">
+                <h1># Juego Gato #</h1>
+            </div>
+        </div>
+        <div class="row1 justify-content-md-center">
             <div class="col-md-auto">
                 <button id="a1" onclick="mandarId(this.id)" class="btn btn-outline-dark"></button>
                 <button id="a2" onclick="mandarId(this.id)" class="btn btn-outline-dark"></button>
@@ -30,18 +41,14 @@
                 <button id="c2" onclick="mandarId(this.id)" class="btn btn-outline-dark"></button> 
                 <button id="c3" onclick="mandarId(this.id)" class="btn btn-outline-dark"></button>
             </div>
-        </div>
-        <div class="row justify-content-md-center">
-            <div class="col-md-auto">
-                <button type="button" class="boton_limpiar" id="contadorX"></button>
-            </div>
-            <div class="col-md-auto">
-                <button type="button" class="boton_limpiar" id="limpiar">Limpiar</button>
-            </div>
-            <div class="col-md-auto">
-                <button type="button" class="boton_limpiar" id="contadorO"></button>
-            </div>
         </div>  
+        <div class="row justify-content-md-center">
+            <div class="col col-md-auto"></div>
+            <div class="col col-md-auto">
+                <button type="button" class="btn btn-outline-primary boton_limpiar" id="limpiar">Limpiar</button>
+            </div>
+            <div class="col col-md-auto"></div>
+        </div>
     </div>
 
     <script src="src/jquery-3.3.1.slim.min.js"></script>
