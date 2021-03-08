@@ -132,7 +132,6 @@ function muestraGanador(resultado, simboloGanador){
     if(resultado){
         if(simboloGanador == "X"){
             swal("Buen Trabajo!", "Felicidades, Ganador es: " + jugador1.value, "success");
-            
         }else{
             swal("Buen Trabajo!", "Felicidades, Ganador es: " + jugador2.value, "success");
         }
